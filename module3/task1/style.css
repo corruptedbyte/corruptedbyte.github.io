@@ -1,0 +1,29 @@
+@font-face {
+    font-family: NerdFonts;
+    src: url("BitstromWeraNerdFontMono-Regular.ttf");
+}
+
+body {
+    font-family: NerdFonts;
+}
+
+.boo {
+    text-align: center;
+    border: 3px solid black;
+    width: 100px;
+    height: 120px;
+    margin-right: 5px;
+    border-radius: 15%;
+}
+
+.wrapper {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin: auto;
+}
+
+h1, p {
+    text-align: center;
+}
