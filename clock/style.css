@@ -1,0 +1,48 @@
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hours {
+    width: 200px;
+    height: 10px;
+    background-color: black;
+    animation: rotate1 3600s linear infinite;
+    position: relative;
+    margin: auto;
+    top: 50%
+}
+.minutes {
+    width: 200px;
+    height: 10px;
+    background-color: black;
+    animation: rotate1 60s linear infinite;
+    position: relative;
+}
+.seconds {
+    width: 200px;
+    height: 10px;
+    background-color: rgb(255, 0, 0);
+    animation: rotate1 1s linear infinite;
+    position: relative;
+}
+.wrapper {
+    background-color: aqua;
+    border: 5px dotted;
+    width: 500px;
+    height: 500px;
+}
+.container {
+    background-color: white;
+    border: 3px dotted;
+    border-radius: 50%;
+    width:500px;
+    height:500px;
+}
