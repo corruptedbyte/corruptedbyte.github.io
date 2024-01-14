@@ -1,0 +1,64 @@
+<!-- I've decided to use internal css for better review of the homework.
+Hope this is more readable -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.4 T.1</title>
+    <style>
+
+        @keyframes rotateClock {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hours
+        {
+            background-color: rgb(6, 135, 133);
+            position: absolute;
+            animation: rotateClock linear 3600s infinite;
+            height: 200px;
+            width: 3px;
+        }
+        .minutes
+        {
+            background-color: rgb(6, 135, 133);
+            position: absolute;
+            animation: rotateClock linear 60s infinite;
+            height: 200px;
+            width: 3px;
+        }
+        .wrapper {
+            top: 15%;
+            width: 0px;
+            margin: auto;
+            position: relative;
+        }
+
+        /* The "container" is just a circle, and nothing special */
+
+        .container {
+            align-content: center;
+            width: 300px;
+            height: 300px;
+            border: 3px solid rgb(6, 135, 133);;
+            border-radius: 50%;
+        }
+
+        body {
+            background-color: rgb(245, 245, 245);
+        }
+
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="wrapper">
+                <div class="hours"></div>
+                <div class="minutes"></div>
+            </div>
+        </div>
+</body>
+</html>
