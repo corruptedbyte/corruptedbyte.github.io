@@ -10,28 +10,30 @@ Hope this is more readable -->
     <style>
 
         @keyframes rotateClock {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
-        .hours
-        {
-            background-color: rgb(6, 135, 133);
-            position: absolute;
-            animation: rotateClock linear 3600s infinite;
-            height: 200px;
-            width: 3px;
-        }
         .minutes
         {
             background-color: rgb(6, 135, 133);
             position: absolute;
             animation: rotateClock linear 60s infinite;
+            height: 250px;
+            width: 3px;
+            top: 25px;
+        }
+        .seconds
+        {
+            background-color: rgb(6, 135, 133);
+            position: absolute;
+            animation: rotateClock linear 1s infinite;
             height: 200px;
             width: 3px;
+            top: 50px;
         }
         .wrapper {
-            top: 15%;
             width: 0px;
             margin: auto;
             position: relative;
@@ -56,8 +58,8 @@ Hope this is more readable -->
 <body>
         <div class="container">
             <div class="wrapper">
-                <div class="hours"></div>
                 <div class="minutes"></div>
+                <div class="seconds"></div>
             </div>
         </div>
 </body>
