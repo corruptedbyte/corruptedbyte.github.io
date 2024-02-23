@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <style>
+        .centered {
+            margin: auto;
+        }
+        
+        .window {
+            text-align: center;
+        }
+        
+        .container {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .buttonStyle {
+            font-family: 'Comic Sans MS';
+            font-size: 30px;
+            left: 40%;
+        }
+        p {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            text-align: center;
+        }
+        li {
+            font-size: 15px;
+        }
+        body {
+            background: url("https://i.redd.it/i8lgm8dwft561.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .tabStyle {
+            font-size: 15px;
+            border: 1px solid #aaaaaa;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid #aaaaaa;
+        }
+
+    </style>
+    <body>
+         <div class="container">
+            <div class="window" style="width: 95%">
+                <div class="title-bar">
+                  <div class="title-bar-text">Installing Windows 7+</div>
+                  <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                  </div>
+                </div>
+                <div class="window-body">
+                  <h2>Installing Windows 7+<h2>
+                  <p>Pricing for activation</p>
+                  <table class="tabStyle centered">
+                    <tr>
+                        <th>Price</th>
+                        <th>Edition</th>
+                        <th>Why you should buy it</th>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>50$</td>
+                        <td>Home</td>
+                        <td>Easy for beginners.</td>
+                    </tr>
+                    <tr>
+                        <td>60$</td>
+                        <td>Server</td>
+                        <td>Built for servers, less power usage, extended updates.</td>
+                    </tr>
+                    <tr>
+                        <td>60$</td>
+                        <td>Enterprice</td>
+                        <td>Has all the tools preinstalled and everything configured. For corporations.</td>
+                    </tr>
+                    <tr>
+                        <td>100$</td>
+                        <td>Professional</td>
+                        <td>Built for proffesionals, sysadmins and advanced users.</td>
+                    </tr>
+                  </table>
+                  <p>You can activate your system before it's installed</p>
+                  <input type="text" placeholder="XXXXX-XXXXX-XXXXX" style="text-align: center;"></input>
+                  <button onclick="activate()">Activate</button>
+                  <br><br>
+                  <hr>
+                  <p>Installing core components, please wait.</p>
+                  <div role="progressbar" class="animate">
+                    <div style="width: 60%"></div>
+                  </div>
+                  <a href="https://microsoft.com">Microsoft Corporation</a><br>
+                </div>
+                <audio autoplay hidden>
+                    <source src="https://ia601804.us.archive.org/15/items/title_winxpmusic/title.mp3" type="audio/mpeg">
+                </audio>
+              </div>
+         </div>
+          <script>
+            function activate() {
+                alert('Your OS has been activated!')
+            }            
+          </script>
+    </body>
+</html>
